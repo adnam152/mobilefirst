@@ -381,6 +381,7 @@ header img{
     width: 290px;
 }
 .feedback-group .text {
+    font-size: 0.9rem;
     width: 70%;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -446,7 +447,7 @@ header img{
     }
 }
 .icon-telephone{
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 .mess{
     width: 4rem;
