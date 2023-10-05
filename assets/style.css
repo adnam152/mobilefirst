@@ -173,10 +173,10 @@ header img{
 }
 @keyframes form-error{
     40%{
-        transform: translate(-20px,-5%);
+        transform: scale(0.8) translate(-20px);
     }
     85%{
-        transform: translate(20px,-5%);
+        transform: scale(0.8) translate(20px);
     }
 }
 @keyframes form-flicker{
@@ -549,6 +549,14 @@ footer .logo{
     }
     .form{
         transform: translateY(-5%);
+    }
+    @keyframes form-error{
+        40%{
+            transform: translate(-20px,-5%);
+        }
+        85%{
+            transform: translate(20px,-5%);
+        }
     }
     .part2{
         margin-top: 5rem;
