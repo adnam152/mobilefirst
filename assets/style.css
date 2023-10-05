@@ -173,10 +173,10 @@ header img{
 }
 @keyframes form-error{
     40%{
-        transform: translateX(-20px);
+        transform: translate(-20px,-5%);
     }
     85%{
-        transform: translateX(20px);
+        transform: translate(20px,-5%);
     }
 }
 @keyframes form-flicker{
