@@ -116,15 +116,10 @@ window.addEventListener('scroll',()=>{
 
 (()=>{
     const rootWidth = 1536;
-    const rootHeight = 747;
     const currentWidth = window.innerWidth;
     const container = document.querySelector('#container');
     container.style.maxWidth = rootWidth + 'px';
-    function updateSize(){
-        if(currentWidth > rootWidth){
-            container.style.scale = currentWidth/rootWidth;
-        }
+    if(currentWidth > rootWidth){
+        container.style.scale = currentWidth/rootWidth;
     }
-    updateSize();
-    window.addEventListener('resize',updateSize())
 })();

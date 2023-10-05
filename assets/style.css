@@ -101,6 +101,9 @@ html {
 }
 
 /* Header */
+header>div{
+    justify-content: space-between;
+}
 header img{
     max-width: 10rem;
 }
@@ -290,13 +293,14 @@ header img{
 }
 .part3 .iframe-box{
     position: relative;
-    margin: 0;
+    margin: 0 auto;
 }
 .part3 .iframe-box img{
     display: none;
     width: 100%;
 }
 .part3 .iframe-box iframe{
+    margin: 1rem 0;
     width: 100%;
     border-radius: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5)
@@ -471,7 +475,200 @@ footer .logo{
     width: 100%;
 }
 
+/* ------------------------------- */
+
+@media (min-width: 765px) {
+    header>div{
+        justify-content: space-around !important;
+    }
+    .part1 .img-title img{
+        width: 30rem;
+    }
+    .part1 .form-area img{
+        position: absolute;
+        top: 10rem;
+    }
+    .part1 .form-area img.left{
+        width: 10rem;
+        display: block;
+        left: 50%;
+        transform: translate(calc(-50% - 200px));
+    }
+    .part1 .form-area img.right{
+        width: 7rem;
+        display: block;
+        right: 50%;
+        transform: translate(calc(60% + 200px));
+    }
+    .part2 .content .left{
+        width: 56%;
+        display: block;
+    }
+    .part2 .content-item p{
+        font-size: 0.8rem;
+    }
+    .part3 .content .content-item{
+        text-align: center;
+    }
+    .part4 .bg-img{
+        transform: translateY(-10%);
+    }
+}
+
+@media (min-width: 1020px) {
+    .part2 .text-title h1{
+        font-size: 2.5rem;
+    }
+    .part2 .btn{
+        bottom: 0.8rem;
+    }
+    .part3 .text-title h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .part1 .img-title h1{
+        font-size: 1.8rem;
+    }
+    .part1 .form-area img.left{
+        width: 12rem;
+        top: 0;
+        transform: translate(calc(-65% - 200px), 27%);
+    }
+    .part1 .form-area img.right{
+        width: 9rem;
+        top: 0;
+        transform: translate(calc(80% + 200px), 22%);
+    }
+    .form{
+        transform: translateY(-5%);
+    }
+    .part2{
+        margin-top: 5rem;
+    }
+    .part2 .content .left{
+        width: 30%;
+    }
+    .part2 .content .right{
+        width: 50%;
+    }
+    .part2 .btn{
+        bottom: -0.5rem;
+        font-size: 1.5rem;
+    }
+    .part3{
+        margin-top: 8rem;
+    }
+    .part3 .iframe-box{
+        margin: 0;
+        padding: 0;
+    }
+    .part3 .iframe-box iframe{
+        width: 400px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+    .part3 .iframe-box img{
+        display: block;
+    }
+    .part3 .content{
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        top: 0;
+        right: 1.5rem;
+    }
+    .part3 .content .content-item{
+        text-align: start;
+        background-color: unset;
+        padding: 1rem 1.5rem;
+    }
+    .part4 .bg-img{
+        transform: translateY(-15%);
+    }
+    .part4 .img-box{
+        width: 50%;
+        transform: translate(3%,-10%);
+    }
+    .container-feedback{
+        justify-content: center;
+        overflow-y: hidden;
+    }
+    .feedback-group{
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1365px) {
+    .part1 .form-area img.left{
+        width: 14rem;
+    }
+    .part1 .form-area img.right{
+        width: 10rem;
+    }
+    .part2 .content-item{
+        opacity: 0;
+    }
+    .part4 .text h1{
+        font-size: 4rem;
+    }
+    .part4 .img-box{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .part1 .img-title img{
+        width: 35rem;
+    }
+    .part1 .form-area img.left {
+        width: 15rem;
+        transform: translate(calc(-85% - 200px), 27%);
+    }
+    .part1 .form-area img.right {
+        width: 10rem;
+        transform: translate(calc(100% + 200px), 30%);
+    }
+    .part2 .content-item{
+        margin-bottom: 2rem;
+    }
+    .part2 .content-item p{
+        font-size: 0.9rem;
+    }
+    .part2 .btn{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1535px){
+    .part1 .img-title img{
+        width: 40rem;
+    }
+    .part1 .form-area img.left{
+        width: 16rem;
+    }
+    .part1 .form-area img.right {
+        width: 11rem;
+        transform: translate(calc(120% + 200px), 30%);
+    }
+    .part1 .img-title h1{
+        font-size: 2.2rem;
+    }
+    .part2 .content .left {
+        width: 27%;
+    }
+    .part2 .content .right {
+        width: 48%;
+    }
+    .part2 .btn{
+        bottom: 0.3rem;
+    }
+}
 
 *{
-    /* box-shadow:  0 0 2px black; */
+    /* box-shadow: 0 0 2px black; */
 }
